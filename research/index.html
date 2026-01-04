@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research & Projects — Nikita Balabin</title>
+  <meta name="description" content="Research and projects by Nikita Balabin: Veo video generation, diffusion models, style extraction, diffusion super-resolution, representation learning, topological data analysis." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="canonical" href="https://nikitabalabin.github.io/research/" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="site">
+      <div class="brand">Nikita Balabin</div>
+      <nav aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/research/">Research</a>
+        <a href="/publications/">Publications</a>
+        <a href="/about/">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Research & Projects</h1>
+
+      <section class="card">
+        <h2>Overview</h2>
+        <p class="small">
+          I work on <strong>generative models</strong> and <strong>computer vision</strong>, with a focus on <strong>diffusion models</strong>,
+          <strong>video generation</strong>, <strong>style extraction</strong>, <strong>super-resolution</strong>, <strong>representation learning</strong>,
+          and <strong>topological data analysis</strong>.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="areas">
+        <h2 id="areas">Research areas</h2>
+
+        <h3>Video generation (Veo)</h3>
+        <p class="small">
+          Work on video generation in <strong>Veo</strong>, with emphasis on controllability, temporal consistency, and practical ways to steer generation.
+        </p>
+
+        <h3>Diffusion image/video models</h3>
+        <p class="small">
+          Diffusion models for image and video generation and editing, focusing on robustness and predictable behavior.
+        </p>
+
+        <h3>Diffusion-based super-resolution and restoration</h3>
+        <p class="small">
+          Super-resolution and restoration pipelines using diffusion models, including high-resolution synthesis and quality enhancement.
+        </p>
+        <ul class="small">
+          <li>Topics: diffusion SR, degradation modeling, high-frequency detail recovery, efficient inference</li>
+        </ul>
+
+        <h3>Style extraction and personalization</h3>
+        <p class="small">
+          Style extraction for generative models: learning distinctive style signatures and applying them consistently across outputs.
+        </p>
+        <ul class="small">
+          <li>Topics: style extraction, personalization, LoRA/DreamBooth-style adapters, style-consistency scoring</li>
+        </ul>
+
+        <h3>Representation learning & topological data analysis (TDA)</h3>
+        <p class="small">
+          Methods to compare and optimize representations using topological features (e.g., persistence-based summaries), including RTD and related work.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="selected">
+        <h2 id="selected">Selected projects</h2>
+
+        <article class="card">
+          <h3>Exactly AI — founding-era ML research lead</h3>
+          <p class="small">
+            Built core generative features and led ML research from the early days of the startup, including diffusion-based editing,
+            style extraction, and high-resolution generation / restoration work.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Diffusion super-resolution to high resolution</h3>
+          <p class="small">
+            Super-resolution pipelines using diffusion models, targeting high-quality detail recovery and stable outputs at high resolutions.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Style extraction systems</h3>
+          <p class="small">
+            Style extraction and personalization methods designed to capture distinctive artistic signatures and apply them consistently.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>RTD / topology-based representation comparison</h3>
+          <p class="small">
+            Representation Topology Divergence (RTD) and related topology-based objectives for representation similarity and disentanglement.
+            See <a href="/publications/">Publications</a> for paper + code links.
+          </p>
+        </article>
+      </section>
+
+      <section class="card" aria-labelledby="keywords">
+        <h2 id="keywords">Keywords</h2>
+        <p class="small">
+          generative models, computer vision, diffusion models, video generation, Veo, diffusion editing, super-resolution,
+          restoration, style extraction, personalization, LoRA, DreamBooth, representation learning, topological data analysis,
+          representation similarity.
+        </p>
+      </section>
+    </main>
+
+    <footer class="small">
+      <div>© <span id="y"></span> Nikita Balabin</div>
+      <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+    </footer>
+  </div>
+</body>
+</html>

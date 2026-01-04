@@ -1,0 +1,57 @@
+/* Minimal, readable, crawler-friendly CSS */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
+}
+a { color: inherit; text-decoration: underline; text-underline-offset: 0.15em; }
+a:hover { opacity: 0.85; }
+.wrapper { max-width: 980px; margin: 0 auto; padding: 24px; }
+header.site {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  align-items: baseline; justify-content: space-between;
+  border-bottom: 1px solid #eee; padding-bottom: 16px; margin-bottom: 24px;
+}
+.brand { font-weight: 700; font-size: 18px; }
+nav a { margin-right: 12px; white-space: nowrap; }
+nav a:last-child { margin-right: 0; }
+.tagline { color: #333; margin: 8px 0 0; }
+.card {
+  border: 1px solid #eee; border-radius: 14px; padding: 16px; margin: 16px 0;
+}
+.small { font-size: 0.95rem; color: #333; }
+.kv { display: grid; grid-template-columns: 140px 1fr; gap: 10px 18px; }
+.kv div { padding: 4px 0; }
+hr { border: 0; border-top: 1px solid #eee; margin: 28px 0; }
+footer { border-top: 1px solid #eee; margin-top: 40px; padding-top: 16px; color: #333; }
+h1 { margin: 0 0 8px; line-height: 1.2; }
+h2 { margin-top: 28px; line-height: 1.25; }
+h3 { margin-top: 18px; line-height: 1.25; }
+ul { padding-left: 18px; }
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+pre { padding: 12px; border: 1px solid #eee; border-radius: 12px; overflow-x: auto; }
+.badges a { margin-right: 10px; }
+.notice { background: #fafafa; border: 1px solid #eee; border-radius: 14px; padding: 14px; }
+/* Mobile header: stack title + nav to avoid awkward wrap */
+@media (max-width: 680px) {
+  header.site {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  header.site nav {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  header.site nav a {
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 6px; /* allows nice wrapping if many links */
+  }
+}

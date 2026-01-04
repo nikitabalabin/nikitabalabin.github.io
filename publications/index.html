@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications — Nikita Balabin</title>
+  <meta name="description" content="Publications by Nikita Balabin with links to papers and associated code repositories (GitHub) when available." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="canonical" href="https://nikitabalabin.github.io/publications/" />
+
+  <!-- JSON-LD: ScholarlyArticle + associated code -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://nikitabalabin.github.io/#nikita-balabin",
+        "name": "Nikita Balabin",
+        "url": "https://nikitabalabin.github.io/",
+        "affiliation": { "@type": "Organization", "name": "Google DeepMind" },
+        "sameAs": [
+          "https://scholar.google.com/citations?hl=en&user=uUGUh6MAAAAJ",
+          "https://uk.linkedin.com/in/nikita-balabin",
+          "https://github.com/nikitabalabin"
+        ],
+        "knowsAbout": [
+          "generative models",
+          "computer vision",
+          "diffusion models",
+          "controllable video generation",
+          "Veo",
+          "topological data analysis",
+          "representation similarity",
+          "Representation Topology Divergence",
+          "disentanglement learning",
+          "topology-preserving representations",
+          "sea ice forecasting"
+        ]
+      },
+
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://arxiv.org/abs/2201.00058",
+        "name": "Representation Topology Divergence: A Method for Comparing Neural Network Representations",
+        "url": "https://arxiv.org/abs/2201.00058",
+        "sameAs": ["https://proceedings.mlr.press/v162/barannikov22a.html"],
+        "author": [{"@type":"Person","name":"Nikita Balabin","@id":"https://nikitabalabin.github.io/#nikita-balabin"}],
+        "keywords": ["topological data analysis","representation similarity","persistence barcodes"],
+        "isBasedOn": [{"@id":"https://github.com/IlyaTrofimov/RTD#software"}]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://github.com/IlyaTrofimov/RTD#software",
+        "name": "RTD (Representation Topology Divergence) — code",
+        "codeRepository": "https://github.com/IlyaTrofimov/RTD",
+        "keywords": ["RTD","Representation Topology Divergence","TDA"]
+      },
+
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://arxiv.org/abs/2308.12696",
+        "name": "Disentanglement Learning via Topology",
+        "url": "https://arxiv.org/abs/2308.12696",
+        "sameAs": ["https://proceedings.mlr.press/v235/balabin24a.html"],
+        "author": [{"@type":"Person","name":"Nikita Balabin","@id":"https://nikitabalabin.github.io/#nikita-balabin"}],
+        "keywords": ["disentanglement","topological loss","topological data analysis"],
+        "isBasedOn": [{"@id":"https://github.com/nikitabalabin/TopDis#software"}]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://github.com/nikitabalabin/TopDis#software",
+        "name": "TopDis — code",
+        "codeRepository": "https://github.com/nikitabalabin/TopDis",
+        "keywords": ["TopDis","disentanglement","topological loss","TDA"]
+      },
+
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://arxiv.org/abs/2302.00136",
+        "name": "Learning Topology-Preserving Data Representations (RTD-AE)",
+        "url": "https://arxiv.org/abs/2302.00136",
+        "sameAs": ["https://openreview.net/forum?id=lIu-ixf-Tzf"],
+        "author": [{"@type":"Person","name":"Nikita Balabin","@id":"https://nikitabalabin.github.io/#nikita-balabin"}],
+        "keywords": ["topology-preserving representations","autoencoder","RTD","topological data analysis"],
+        "isBasedOn": [{"@id":"https://github.com/danchern97/RTD_AE#software"}]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://github.com/danchern97/RTD_AE#software",
+        "name": "RTD_AE — code",
+        "codeRepository": "https://github.com/danchern97/RTD_AE",
+        "keywords": ["RTD-AE","autoencoder","TDA"]
+      },
+
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://arxiv.org/abs/2210.08877",
+        "name": "Data-Driven Short-Term Daily Operational Sea Ice Regional Forecasting",
+        "url": "https://arxiv.org/abs/2210.08877",
+        "sameAs": ["https://www.mdpi.com/2072-4292/14/22/5837"],
+        "author": [{"@type":"Person","name":"Nikita Balabin","@id":"https://nikitabalabin.github.io/#nikita-balabin"}],
+        "keywords": ["sea ice forecasting","regional forecasting","U-Net","operational forecasting"]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="site">
+      <div class="brand">Nikita Balabin</div>
+      <nav aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/research/">Research</a>
+        <a href="/publications/">Publications</a>
+        <a href="/about/">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Publications</h1>
+      <p class="small">
+        Most up-to-date list: <a href="https://scholar.google.com/citations?hl=en&user=uUGUh6MAAAAJ">Google Scholar</a>.
+      </p>
+
+      <section class="card">
+        <h2>Paper + links (selected)</h2>
+
+        <article class="card" aria-labelledby="rtd">
+          <h3 id="rtd">Representation Topology Divergence (RTD)</h3>
+          <p class="small">Keywords: representation similarity, topological data analysis, persistence barcodes.</p>
+          <p class="small">
+            <a href="https://arxiv.org/abs/2201.00058">arXiv</a> ·
+            <a href="https://proceedings.mlr.press/v162/barannikov22a.html">PMLR (ICML)</a> ·
+            <strong><a href="https://github.com/IlyaTrofimov/RTD">GitHub</a></strong>
+          </p>
+        </article>
+
+        <article class="card" aria-labelledby="topdis">
+          <h3 id="topdis">Disentanglement Learning via Topology (TopDis)</h3>
+          <p class="small">Keywords: disentanglement, topological loss, multi-scale topology.</p>
+          <p class="small">
+            <a href="https://arxiv.org/abs/2308.12696">arXiv</a> ·
+            <a href="https://proceedings.mlr.press/v235/balabin24a.html">PMLR (ICML 2024)</a> ·
+            <strong><a href="https://github.com/nikitabalabin/TopDis">GitHub</a></strong>
+          </p>
+        </article>
+
+        <article class="card" aria-labelledby="rtdae">
+          <h3 id="rtdae">Learning Topology-Preserving Data Representations (RTD-AE)</h3>
+          <p class="small">Keywords: topology-preserving representations, autoencoders, RTD differentiation.</p>
+          <p class="small">
+            <a href="https://arxiv.org/abs/2302.00136">arXiv</a> ·
+            <a href="https://openreview.net/forum?id=lIu-ixf-Tzf">OpenReview</a> ·
+            <strong><a href="https://github.com/danchern97/RTD_AE">GitHub</a></strong>
+          </p>
+        </article>
+
+        <article class="card" aria-labelledby="ice">
+          <h3 id="ice">Data-Driven Short-Term Daily Operational Sea Ice Regional Forecasting</h3>
+          <p class="small">Keywords: sea ice forecasting, regional forecasting, operational forecasting, U-Net.</p>
+          <p class="small">
+            <a href="https://arxiv.org/abs/2210.08877">arXiv</a> ·
+            <a href="https://www.mdpi.com/2072-4292/14/22/5837">Remote Sensing (MDPI)</a>
+          </p>
+        </article>
+
+      </section>
+    </main>
+
+    <footer class="small">
+      <div>© <span id="y"></span> Nikita Balabin</div>
+      <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+    </footer>
+  </div>
+</body>
+</html>
